@@ -132,11 +132,12 @@ export default {
   }, 
   watch: {
       $route: function(newVal, oldVal) {
-
-        if(newVal.name != 'Home') {
+          console.log(newVal.name)
+        if(newVal.name !== 'Home') {
             this.showHeader = true
         } else {
-            return false
+            this.showHeader = false
+            this.subMenuVisible = false
         }
         // console.log(this.$router.currentRoute.name)
         // if(this.$router.currentRoute.name = 'About') {
