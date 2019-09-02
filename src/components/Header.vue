@@ -132,20 +132,20 @@ export default {
   methods: {
       route: function() {
 
-        if(this.$router.currentRoute.name == 'home') {
+        if(this.$router.currentRoute.name == 'Home') {
             this.showHeader = false
         }
 
-        if(this.$router.currentRoute.name == 'about') {
+        if(this.$router.currentRoute.name == 'About') {
             this.aboutPage = true
             return 'about'
-        } else if(this.$router.currentRoute.name == 'people') {
+        } else if(this.$router.currentRoute.name == 'People') {
             return 'people'
-        } else if(this.$router.currentRoute.name == 'press-awards') {
+        } else if(this.$router.currentRoute.name == 'PressAwards') {
             return 'press'
-        } else if(this.$router.currentRoute.name == 'maps') {
+        } else if(this.$router.currentRoute.name == 'Maps') {
             return 'maps'
-        } else if(this.$router.currentRoute.name == 'home') {
+        } else if(this.$router.currentRoute.name == 'Home') {
             return 'home'
         }
       }

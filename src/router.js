@@ -1,24 +1,28 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
+import About from "./views/About.vue";
+import People from "./views/People.vue";
+import PressAwards from "./views/PressAwards.vue";
+import Maps from "./views/Maps.vue";
 
 Vue.use(Router);
 
 console.log(process.env.BASE_URL)
 
 export default new Router({
-  mode: "history",
   base: process.env.BASE_URL,
   linkExactActiveClass: 'is-active',
   routes: [
     {
       path: "/",
-      name: "home",
+      name: "Home",
       component: Home
     },
     {
       path: "/about",
-      name: "about",
+      name: "About",
+      component: About,
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
@@ -27,7 +31,8 @@ export default new Router({
     },
     {
       path: "/people",
-      name: "people",
+      name: "People",
+      component: People,
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
@@ -37,6 +42,7 @@ export default new Router({
     {
       path: "/press-awards",
       name: "press/awards",
+      component: PressAwards,
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
@@ -46,6 +52,7 @@ export default new Router({
     {
       path: "/maps",
       name: "maps",
+      component: Maps,
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
