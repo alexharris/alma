@@ -1,8 +1,9 @@
 <template>
     <!-- .container is main centered wrapper -->
-    <div class="container header" v-if="showHeader">
+    <div class="container header">
+        
         <!-- columns should be the immediate child of a .row -->
-        <div class="row">
+        <div class="row" v-if="showHeader">
             <div class="eight columns">
                 <a href="/alma/#/about" @mouseover="subMenuVisible = true">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -122,36 +123,35 @@ export default {
   data() {
       return {
           subMenuVisible: false,
-          showHeader: true,
+          showHeader: false,
           aboutPage: false
       }
   },
   props: {
     msg: String
   }, 
-  methods: {
-      route: function() {
+  watch: {
+      $route: function(newVal, oldVal) {
 
-        if(this.$router.currentRoute.name == 'Home') {
-            this.showHeader = false
+        if(newVal.name != 'Home') {
+            this.showHeader = true
+        } else {
+            return false
         }
-
-        if(this.$router.currentRoute.name == 'About') {
-            this.aboutPage = true
-            return 'about'
-        } else if(this.$router.currentRoute.name == 'People') {
-            return 'people'
-        } else if(this.$router.currentRoute.name == 'PressAwards') {
-            return 'press'
-        } else if(this.$router.currentRoute.name == 'Maps') {
-            return 'maps'
-        } else if(this.$router.currentRoute.name == 'Home') {
-            return 'home'
-        }
+        // console.log(this.$router.currentRoute.name)
+        // if(this.$router.currentRoute.name = 'About') {
+        //     this.aboutPage = true
+        //     return 'about'
+        // } else if(this.$router.currentRoute.name == 'People') {
+        //     return 'people'
+        // } else if(this.$router.currentRoute.name == 'PressAwards') {
+        //     return 'press'
+        // } else if(this.$router.currentRoute.name == 'Maps') {
+        //     return 'maps'
+        // } else if(this.$router.currentRoute.name == 'Home') {
+        //     return 'home'
+        // }
       }
-  },
-  created() {
-      this.route()
   }
 };
 </script>
