@@ -4,7 +4,7 @@
         <!-- columns should be the immediate child of a .row -->
         <div class="row">
             <div class="eight columns">
-                <a href="/alma/about" @mouseover="subMenuVisible = true">
+                <a href="/alma/#/about" @mouseover="subMenuVisible = true">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         width="300px" viewBox="0 0 482.109 70.6" xml:space="preserve" class="alma-logo" v-bind:class="{ active: aboutPage }">
                     <g>
