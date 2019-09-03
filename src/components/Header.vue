@@ -86,7 +86,16 @@
         <div class="row submenu-row"  @mouseout="subMenuVisible = false">
             <div class="twelve columns" v-show="subMenuVisible">
                 <ul class="sub-menu"  @mouseover="subMenuVisible = true">
-                    <li>                        
+                    <li class="sub-menu-maps-link">      
+                        <router-link
+                        to="/maps"
+                        v-slot="{ href, route, navigate, isActive, isExactActive }"
+                        >
+                            <NavLink v-bind:class="{active: isActive}" :href="href" @click="navigate">maps for change</NavLink
+                        >
+                        </router-link>   
+                    </li>
+                    <li>                                       
                         <router-link
                         to="/people"
                         v-slot="{ href, route, navigate, isActive, isExactActive }"
@@ -165,68 +174,107 @@ export default {
         position: relative;
     }
 
-  .alma-logo {
-      fill: black;
-      &:hover .alma-text {
-          fill: #fd57ff;
-      }
-      &.active .alma-text{
-          fill: #00adee;
-      }
-      &.active:hover .alma-text {
-          fill: #fd57ff;
-      }
-  }
-  .header-right {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-  }
-  .maps-link {
-      font-size: 2.5rem;
-      text-decoration: none;
-      color: black;
-      padding-bottom: 2px;
+    .alma-logo {
+        fill: black;
+        &:hover .alma-text {
+            fill: #fd57ff;
+        }
+        &.active .alma-text{
+            fill: #00adee;
+        }
+        &.active:hover .alma-text {
+            fill: #fd57ff;
+        }
+    }
+    .header-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .maps-link {
+        font-size: 2.5rem;
+        text-decoration: none;
+        color: black;
+        padding-bottom: 2px;
         & .active {
             color: #00adee;
         }
         &:hover {
             cursor: pointer;
             color: #fd57ff;
-        }      
-  }
-  .submenu-row {
-      padding-left: 15px;
-      height: 35px;
-      & > div {
-          height: 30px;
-      }
-  }
-  .sub-menu {
-    list-style-type: none;
-    z-index: 100;
-    display: inline-block;
-    margin-bottom: 0;
-    height: 30px;
-    li {
-        float: left;
-        margin-right: 1rem;
+        }     
+
+    }
+
+
+    .submenu-row {
+        padding-left: 15px;
+        height: 35px;
+        & > div {
+            height: 30px;
+        }
+    }
+    .sub-menu {
+        list-style-type: none;
+        z-index: 100;
+        display: inline-block;
         margin-bottom: 0;
         height: 30px;
-        navlink {
-            font-size: .8em;
-            font-weight: bold;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: black;
-            &.active {
-                color: #00adee;
-            }
-            &:hover {
-                color: #fd57ff;
-                cursor: pointer;
+        li {
+            float: left;
+            margin-right: 1rem;
+            margin-bottom: 0;
+            height: 30px;
+            navlink {
+                font-size: .8em;
+                font-weight: bold;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: black;
+                &.active {
+                    color: #00adee;
+                }
+                &:hover {
+                    color: #fd57ff;
+                    cursor: pointer;
+                }
             }
         }
     }
+
+    .sub-menu-maps-link {
+        display: none;
+    }
+
+    @media (max-width: 900px) {
+        .header {
+            margin: 0;
+            padding: 0;
+        }
+        .maps-link {
+            font-size: 1em;
+            display: none;
+        }
+        .header-right {
+            position: relative;
+            left:0;
+            bottom: auto;
+            right: auto;
+        }    
+        .submenu-row {
+            height: 5em;
+            & > div {
+                display: block !important;
+            }
+        }
+        .sub-menu {
+            display: block;
+            li {
+                float: none;
+            }
+        }   
+        .sub-menu-maps-link {
+            display: block;
+        }        
   }
 </style>
