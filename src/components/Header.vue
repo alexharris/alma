@@ -175,15 +175,12 @@ export default {
     }
 
     .alma-logo {
-        fill: black;
+        fill: #00adee;
         &:hover .alma-text {
-            fill: #fd57ff;
-        }
-        &.active .alma-text{
-            fill: #00adee;
+            fill: #ef4055;
         }
         &.active:hover .alma-text {
-            fill: #fd57ff;
+            fill: #ef4055;
         }
     }
     .header-right {
@@ -201,7 +198,7 @@ export default {
         }
         &:hover {
             cursor: pointer;
-            color: #fd57ff;
+            color: #ef4055;
         }     
 
     }
@@ -235,7 +232,7 @@ export default {
                     color: #00adee;
                 }
                 &:hover {
-                    color: #fd57ff;
+                    color: #ef4055;
                     cursor: pointer;
                 }
             }

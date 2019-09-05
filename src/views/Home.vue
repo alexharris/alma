@@ -94,7 +94,7 @@ export default {
   }
 
   .alma-logo:hover .alma-text {
-    fill: #fd57ff;
+    fill: #ef4055;
   }
 </style>
 

@@ -37,13 +37,4 @@ export default {
   .row {
     margin-top: 2rem;
   }
-
-  a {
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-    color: #fd57ff;
-  }
 </style>
