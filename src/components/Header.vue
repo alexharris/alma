@@ -196,7 +196,7 @@
                 </span>
             </div>
         </div>
-        <div class="row submenu-row"  @mouseout="subMenuVisible = false">
+        <div class="row submenu-row"  @mouseout="subMenuVisible = false" v-if="showHeader">
             <div class="twelve columns" v-show="subMenuVisible">
                 <ul class="sub-menu"  @mouseover="subMenuVisible = true">
                     <li class="sub-menu-maps-link">      

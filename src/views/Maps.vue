@@ -5,7 +5,7 @@
         <div class="two columns">&nbsp;</div>
         <div class="four columns"><img src="../assets/dapl.jpg" /></div>
         <div class="six columns">
-          <h2>A LIVING, BREATHING MOVEMENT: AN INTRODUCTION TO THE DAPL ISSUE</h2>
+          <h2><a href="https://www.kcet.org/shows/earth-focus/projects/dakota-access-pipeline">A LIVING, BREATHING MOVEMENT: AN INTRODUCTION TO THE DAPL ISSUE</a></h2>
           <p>
             A series of interactive maps on the Dakota Access Pipeline route that illustrate the effects it will have on adjacent communities and beyond, as well as outlining opportunities for alternatives to fossil fuels along the DAPL route including wind and solar. Our strategy was to combine landscape architecture strategies with visual representation and community outreach practices to increase awareness on the critical issues associated with the environment, land use and human rights.
           </p>
