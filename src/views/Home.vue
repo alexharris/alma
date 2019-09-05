@@ -98,7 +98,8 @@ export default {
   .home {
     text-align: center;
     svg {
-      margin-top: 10rem;     
+      margin-top: 10rem;  
+      max-width: 100%;   
     }
   }
 
