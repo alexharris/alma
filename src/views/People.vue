@@ -3,7 +3,7 @@
     <page-content>
       <div class="row">
         <div class="two columns">&nbsp;</div>
-        <div class="four columns"><img src="../assets/margot-jacobs.jpg" /></div>
+        <div class="four columns"><img src="../assets/margot-jacobs.jpg" alt="Photo of Margot Jacobs"/></div>
         <div class="six columns">
           <h2><strong>MARGOT JACOBS</strong> FOUNDER/DIRECTOR</h2>
           <p>
@@ -13,7 +13,7 @@
       </div>
       <div class="row">
         <div class="two columns">&nbsp;</div>
-        <div class="four columns"><img src="../assets/eden-ferry.jpg" /></div>
+        <div class="four columns"><img src="../assets/eden-ferry.jpg" alt="Photo of Eden Ferry" /></div>
         <div class="six columns">
           <h2><strong>EDEN FERRY</strong> THOUGHT LEADER</h2>
           <p>
@@ -23,7 +23,7 @@
       </div>
       <div class="row">
         <div class="two columns">&nbsp;</div>
-        <div class="four columns"><img src="../assets/kaleen-juarez.jpg" /></div>
+        <div class="four columns"><img src="../assets/kaleen-juarez.jpg" alt="Photo of Kaleen Juarez" /></div>
         <div class="six columns">
           <h2><strong>KALEEN JUAREZ</strong> THOUGHT LEADER</h2>
           <p>

@@ -2,7 +2,7 @@
   <div class="home">
     <a href="/alma/#/about"> 
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          width="500px" viewBox="0 0 482.109 70.6" xml:space="preserve" class="alma-logo">
+          width="500px" viewBox="0 0 482.109 70.6" xml:space="preserve" class="alma-logo" alt="Alma and Friends Logo">
           <g>
               <path d="M275.185,57.141h-6.003v-6.712h-6.325V44.62h6.325v-6.712h6.003v6.712h6.323v5.809h-6.323V57.141z"/>
               <path d="M303.42,62.274h-6.453V45.559h-2.581V40.2h2.581V24.195c0-2.754,0.655-4.818,1.969-6.196

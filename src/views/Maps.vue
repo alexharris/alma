@@ -3,7 +3,7 @@
     <page-content>
       <div class="row">
         <div class="two columns">&nbsp;</div>
-        <div class="four columns"><img src="../assets/dapl.jpg" /></div>
+        <div class="four columns"><img src="../assets/dapl.jpg" alt="Example of DAPL map" /></div>
         <div class="six columns">
           <h2><a href="https://www.kcet.org/shows/earth-focus/projects/dakota-access-pipeline">A LIVING, BREATHING MOVEMENT: AN INTRODUCTION TO THE DAPL ISSUE</a></h2>
           <p>
@@ -13,7 +13,7 @@
       </div>
       <div class="row">
         <div class="two columns">&nbsp;</div>
-        <div class="four columns"><img src="../assets/border.jpg" /></div>
+        <div class="four columns"><img src="../assets/border.jpg" alt="Example of Border Map" /></div>
         <div class="six columns">
           <h2>BORDER</h2>
           <p>
@@ -23,7 +23,7 @@
       </div>
       <div class="row">
         <div class="two columns">&nbsp;</div>
-        <div class="four columns"><img src="../assets/before-the-end.jpg" /></div>
+        <div class="four columns"><img src="../assets/before-the-end.jpg" alt="Before the End logo" /></div>
         <div class="six columns">
           <h2>BEFORE THE END</h2>
           <p>

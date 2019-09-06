@@ -5,9 +5,9 @@
         <!-- columns should be the immediate child of a .row -->
         <div class="row" v-if="showHeader">
             <div class="eight columns">
-                <a href="/alma/#/about" @mouseover="subMenuVisible = true">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        width="300px" viewBox="0 0 482.109 81" xml:space="preserve" class="alma-logo" v-bind:class="{ active: aboutPage }">
+                <a href="/alma/#/about" @mouseover="subMenuVisible = true" tabindex="0" @focus="subMenuVisible = true">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="300px" viewBox="0 0 482.109 81" xml:space="preserve" class="alma-logo" v-bind:class="{ active: aboutPage }" alt="Alma and Friends Logo">
                     <g>
                         <path d="M275.185,57.141h-6.003v-6.712h-6.325V44.62h6.325v-6.712h6.003v6.712h6.323v5.809h-6.323V57.141z"/>
                         <path d="M303.42,62.274h-6.453V45.559h-2.581V40.2h2.581V24.195c0-2.754,0.655-4.818,1.969-6.196
@@ -90,9 +90,9 @@
                     to="/maps"
                     v-slot="{ href, route, navigate, isActive, isExactActive }"
                     >
-                        <NavLink v-bind:class="{active: isActive}" class="maps-link" :href="href" @click="navigate">
-                            <svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="-117.231 8.963 350 66" xml:space="preserve"
+                        <a v-bind:class="{active: isActive}" class="maps-link" :href="href" @click="navigate" tabindex="0">
+                            <svg  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="-117.231 8.963 350 66" xml:space="preserve" alt="Maps for Change"
                                 >
                             <g>
                                 <path d="M-112.767,35.699h6.293v2.453c1.301-2.013,3.315-3.021,6.044-3.021c2.851,0,4.885,1.216,6.104,3.651
@@ -190,7 +190,7 @@
                                     L220.403,44.196z"/>
                             </g>
                             </svg>
-                        </NavLink
+                        </a
                     >
                     </router-link>  
                 </span>
@@ -200,32 +200,18 @@
             <div class="twelve columns" v-show="subMenuVisible">
                 <ul class="sub-menu"  @mouseover="subMenuVisible = true">
                     <li class="sub-menu-maps-link">      
-                        <router-link
-                        to="/maps"
-                        v-slot="{ href, route, navigate, isActive, isExactActive }"
-                        >
-                            <NavLink v-bind:class="{active: isActive}" :href="href" @click="navigate">maps for change</NavLink
-                        >
+                        <router-link to="/maps" v-slot="{ href, route, navigate, isActive, isExactActive }">
+                            <a v-bind:class="{active: isActive}" :href="href" @click="navigate">maps for change</a>
                         </router-link>   
                     </li>
                     <li>                                       
-                        <router-link
-                        to="/people"
-                        v-slot="{ href, route, navigate, isActive, isExactActive }"
-                        >
-                        <NavLink v-bind:class="{active: isActive}" :href="href" @click="navigate"
-                            >{{ route.name }}</NavLink
-                        >
+                        <router-link to="/people" v-slot="{ href, route, navigate, isActive, isExactActive }">
+                            <a v-bind:class="{active: isActive}" :href="href" @click="navigate">{{ route.name }}</a>
                         </router-link>                        
                     </li>
                     <li>
-                        <router-link
-                        to="/press-awards"
-                        v-slot="{ href, route, navigate, isActive, isExactActive }"
-                        >
-                        <NavLink v-bind:class="{active: isActive}" :href="href" @click="navigate"
-                            >{{ route.name }}</NavLink
-                        >
+                        <router-link to="/press-awards" v-slot="{ href, route, navigate, isActive, isExactActive }">
+                            <a v-bind:class="{active: isActive}" :href="href" @click="navigate">{{ route.name }}</a>
                         </router-link>    
                     </li>
                 </ul>
@@ -341,7 +327,7 @@ export default {
             margin-right: 1rem;
             margin-bottom: 0;
             height: 30px;
-            navlink {
+            a {
                 font-size: .8em;
                 font-weight: bold;
                 text-decoration: none;
