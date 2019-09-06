@@ -5,7 +5,7 @@
         <!-- columns should be the immediate child of a .row -->
         <div class="row" v-if="showHeader">
             <div class="eight columns">
-                <a href="/about" @mouseover="subMenuVisible = true" tabindex="0" @focus="subMenuVisible = true">
+                <a href="/#/about" @mouseover="subMenuVisible = true" tabindex="0" @focus="subMenuVisible = true">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         width="300px" viewBox="0 0 482.109 81" xml:space="preserve" class="alma-logo" v-bind:class="{ active: aboutPage }" alt="Alma and Friends Logo">
                     <g>
