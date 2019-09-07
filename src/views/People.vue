@@ -26,11 +26,22 @@
         <div class="four columns"><img src="../assets/kaleen-juarez.jpg" alt="Photo of Kaleen Juarez" /></div>
         <div class="six columns">
           <h2><strong>KALEEN JUAREZ</strong> THOUGHT LEADER</h2>
-          <p>
-            Kaleen Juarez is driven by her desire to merge ecology, social justice and thoughtful design to evoke urban change that people can experience each day. Kaleen worked with the Port of San Francisco where she focused on resilient design which created her drive to advocate for socially and ecologically-responsible design for the public good.
-          </p>
+          <p>Kaleen Juarez is driven by her desire to merge ecology, social justice and thoughtful design to evoke urban change that people can experience each day. She worked with the Port of San Francisco where she focused on resilient design which created her drive to advocate for socially and ecologically-responsible design for the public good. In addition to ALMA, Kaleen is an Associate at Studio-MLA.</p>
         </div>
-      </div>            
+      </div> 
+      <div class="row">
+        <div class="six columns">&nbsp;</div>
+        <div class="six columns">
+          <h2><strong>PAST CONTRIBUTORS</strong></h2>
+          <ul>
+            <li>Aaron Ackerman</li>
+            <li>Jeremy Jarin</li>
+            <li>Claire Latane</li>
+            <li>Kenny Tang</li>
+            <li>Jean Yang</li>
+          </ul>
+        </div>  
+      </div>         
     </page-content>
   </div>
 </template>
