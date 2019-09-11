@@ -7,7 +7,7 @@
         <div class="six columns">
           <h2><strong>MARGOT JACOBS</strong> FOUNDER/DIRECTOR</h2>
           <p>
-            ALMA was founded by Margot Jacobs, a senior associate and strategic project development lead at Studio-MLA. She is currently leading the design for several projects along the LA River and in the Los Angeles Arts District. Her writing on the benefits of multi-beneficial infrastructure has appeared in the LA Times, Flaunt Magazine and the Stockholm World Water Week Proceedings. 
+ALMA was founded by Margot Jacobs, who advocates for designing with nature and for people. This includes multiple-benefit landscapes; public parks, waterways, infrastructure systems and mixed-use developments in the US as well as Central and South America. Committed to work that improves quality of life, she is active in water conservation, environmental justice, and pro-bono efforts. She is currently leading the design for several projects along the LA River and in the Los Angeles Arts District. Margot is a senior associate and strategic project development lead at Studio-MLA.
           </p>
         </div>
       </div>
