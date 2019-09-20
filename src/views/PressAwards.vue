@@ -6,7 +6,7 @@
         <div class="ten columns">
           <h2><strong>2019</strong></h2>
           <ul>
-            <li>National American Society of Landscape Architects • Communications Honor Award</li>
+            <!-- <li>National American Society of Landscape Architects • Communications Honor Award</li> -->
             <li>Fuck with the Future Podcast • <a href="http://www.findinginfinity.com/stories/meet-margot-jacobs/">Finding Infinity</a></li>
           </ul>
           <h2><strong>2018</strong></h2>
